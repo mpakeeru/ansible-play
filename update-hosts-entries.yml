@@ -1,0 +1,15 @@
+---
+- name: "Playbook to update /etc/hosts"
+  hosts: hosts_to_add_key
+
+  tasks: 
+  - name: Update hosts
+    lineinfile:
+      path: /etc/hosts
+      state: present
+      line: "{{item}}"
+    with_items:
+      - '10.0.3.1 mc01'
+      - '10.0.3.1 mq01'
+      - '10.0.3.1 db01'
+    become: true
