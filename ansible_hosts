@@ -1,6 +1,6 @@
 [hosts_to_add_key]
-13.58.204.140 ansible_user=ubuntu 
-18.227.24.86  ansible_user=ubuntu 
+3.145.167.52 ansible_user=ubuntu 
+
 
 [hosts_to_add_key:vars]
 ansible_ssh_common_args="-o StrictHostKeyChecking=no"
