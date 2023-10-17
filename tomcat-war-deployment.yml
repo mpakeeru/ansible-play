@@ -4,5 +4,5 @@
     - name: copying file with playbook
       become: true
       copy:
-        src: ~/target/sample-web.war
+        src: ~/target/SimpleTomcatWebApp.war
         dest: /var/lib/tomcat9/webapps
