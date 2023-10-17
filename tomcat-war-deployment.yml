@@ -1,0 +1,8 @@
+- name: Ansible Copy WAR File Local to Remote
+  hosts: all
+  tasks:
+    - name: copying file with playbook
+      become: true
+      copy:
+        src: ~/target/sample-web.war
+        dest: /var/lib/tomcat9/webapps
